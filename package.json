@@ -1,0 +1,32 @@
+{
+  "name": "javascript-application",
+  "version": "1.0.0",
+  "description": "Application from Rocketseat Website",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development"
+  },
+  "repository": "git+https://github.com/isaquelosoas/JavaScript-Application.git",
+  "author": "Isaque Lopes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isaquelosoas/JavaScript-Application/issues"
+  },
+  "homepage": "https://github.com/isaquelosoas/JavaScript-Application#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "axios": "^0.19.2"
+    
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.4",
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
