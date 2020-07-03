@@ -5,7 +5,7 @@ class App {
         this.formEl =  document.getElementById('repo');
         this.listEl =  document.getElementById('list');
         this.inputEl =  document.querySelector('input');       
-        this.registerHandlers();        
+        this.registerHandlers();            
     }
     registerHandlers(){
         this.inputEl.setAttribute('placeholder','Insira o repositório');
@@ -23,7 +23,7 @@ class App {
     async addRepository(){
         event.preventDefault();
         let inputValue = this.inputEl.value;
-        let repositorio = await this.buscaRepo(inputValue);
+        let repositorio = await this.buscaRepo(inputValue); 
         console.log(repositorio);
         if (repositorio.data.total_count !== 0){
             this.repositories.push({
@@ -35,11 +35,16 @@ class App {
             console.log(this.repositories);
             this.render();
             this.inputEl.value = ""; 
+            console.log(document.querySelector('form#repo strong'));
+                  
         }
         else {
             this.inputEl.value = ""; 
-            this.inputEl.setAttribute('placeholder','Repositório não encontrado');           
+            this.inputEl.setAttribute('placeholder','Repositório não encontrado');                      
         }
+        
+        
+        
     }      
         
     
