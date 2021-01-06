@@ -15,7 +15,7 @@
   "homepage": "https://github.com/isaquelosoas/JavaScript-Application#readme",
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
     
   },
   "devDependencies": {
